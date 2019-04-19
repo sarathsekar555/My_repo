@@ -1,0 +1,6 @@
+---
+
+- hosts: servers
+  tasks:
+   - name: uninstall http server on the linux servers
+     yum: name=httpd state=absent
